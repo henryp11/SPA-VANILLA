@@ -1,7 +1,5 @@
-# CONSTRUCCION DE SCRIPT DE TRAVIS. sI QUIERO TENER LA VISUALIZACION DE ICONOS EN EL EXPLORER DE VSC INTALAR PLUGIN MATERIAL ICONS
-
-languaje: node_js
-cache: 
+language: node_js
+cache:
   directories:
     - ~/.npm
 nod_js:
@@ -13,7 +11,7 @@ script:
 deploy:
   provider: pages
   edge: true,
-  skip-cleanup: true
+  skip-cleanup : true
   keep-history: true
   github-token: $GITHUB_TOKEN
   local-dir: dist/
